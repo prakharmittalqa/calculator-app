@@ -3,10 +3,11 @@ pipeline{
     parameters {
         choices(
             name: 'ENVIRONMENT',
-            choices: ['staging', 'production'],
+            choice: ['staging', 'production'],
             description: 'Where to deploy'
         )
     }
+
     
     stages{
         stage('Checkout'){
