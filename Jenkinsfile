@@ -7,7 +7,7 @@ pipeline{
             description: 'Where to deploy'
         )
     }
-    }
+    
     stages{
         stage('Checkout'){
             steps {
