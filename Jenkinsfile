@@ -1,9 +1,9 @@
 pipeline{
     agent any
     parameters {
-        choices(
+        choice(
             name: 'ENVIRONMENT',
-            choice: ['staging', 'production'],
+            choices: ['staging', 'production'],
             description: 'Where to deploy'
         )
     }
