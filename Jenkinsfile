@@ -6,9 +6,7 @@ pipeline{
             choices: ['staging', 'production'],
             description: 'Where to deploy'
         )
-    }
-
-    
+    }    
     stages{
         stage('Checkout'){
             steps {
